@@ -11,7 +11,7 @@ let one;
 let timer = 5;
 let button;
 
-a = 130; //sizing the dance floor
+a = 130; 
 uLim = 8; //change these for density
 vLim = 7;
 
@@ -28,8 +28,8 @@ function setup() {
   one.loop();
 }
 function draw() {
-  //orbitControl();//uncomment to interact
-  t = frameCount / 2; //you can always stop time
+  // animation of visual
+  t = frameCount / 2; 
   specularMaterial(255);
   pointLight(
     225 * abs(cos(t / 4)),
@@ -47,7 +47,7 @@ function draw() {
   inKlein(1);
   inKlein(0.5);
   inKlein(0.2);
-
+//timer
   if (frameCount % 60 == 0 && timer > 0) {
     // if the frameCount is divisible by 60, then a second has passed. it will stop at 0
     timer--;
@@ -64,10 +64,11 @@ function draw() {
     button.position(425, height/2);
     button.mousePressed(function goToAnotherPage() {
       window.location.href =
-        "https://editor.p5js.org/natashatan/sketches/gxSMDJpDT";
+        "https://tashatan1.github.io/let-s-breath/";
     });
   }
 }
+//rotate visual
 function inKlein(s) {
   rotateY(t);
   rotateZ(90 + t);
@@ -77,7 +78,7 @@ function inKlein(s) {
       push();
       scale(s, s, s);
 
-      u = i + 360 * sin(t / 4); //if you look close enough this rotation added will give away the seam
+      u = i + 360 * sin(t / 4); 
       v = j;
       x = (2 + cos(v / 2) * sin(u) - sin(v / 2) * sin(2 * u)) * cos(v);
       y =
@@ -95,4 +96,3 @@ function inKlein(s) {
   }
 }
 
-//equation reference: https://www.geogebra.org/m/hthQ8yfN
