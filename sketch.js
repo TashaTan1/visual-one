@@ -61,7 +61,7 @@ function draw() {
         "https://tashatan1.github.io/front-page-/";
     });
     button = createButton("Let's Breath");
-    button.position(2500, 1);
+    button.position(2000, 1);
     button.mousePressed(function goToAnotherPage() {
       window.location.href =
         "https://tashatan1.github.io/let-s-breath/";
