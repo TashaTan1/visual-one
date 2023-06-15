@@ -8,7 +8,7 @@
 ***************************************************************************************/
 
 let one;
-let timer = 3;
+let timer = 5;
 let button;
 
 a = 130; 
@@ -54,14 +54,14 @@ function draw() {
   }
   //  console.log(timer);
   if (timer == 0) {
-    button = createButton("Carry on Listening");
-    button.position((width/2)- 200, height/2);
+    button = createButton("Back to Frequencies");
+    button.position(100, 100);
     button.mousePressed(function goToAnotherPage() {
       window.location.href =
-        "https://tashatan1.github.io/visual-one/";
+        "https://tashatan1.github.io/front-page-/";
     });
     button = createButton("Let's Breath");
-    button.position((width / 2) + 80, height/2);
+    button.position(800, 100);
     button.mousePressed(function goToAnotherPage() {
       window.location.href =
         "https://tashatan1.github.io/let-s-breath/";
