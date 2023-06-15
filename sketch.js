@@ -55,13 +55,13 @@ function draw() {
   //  console.log(timer);
   if (timer == 0) {
     button = createButton("Back to Frequencies");
-    button.position(10, 10);
+    button.position(1, 1);
     button.mousePressed(function goToAnotherPage() {
       window.location.href =
         "https://tashatan1.github.io/front-page-/";
     });
     button = createButton("Let's Breath");
-    button.position(1500, 10);
+    button.position(2500, 1);
     button.mousePressed(function goToAnotherPage() {
       window.location.href =
         "https://tashatan1.github.io/let-s-breath/";
